@@ -6,10 +6,10 @@
       .board {
         display: flex;
         flex-direction: column;
-        background-color: #2196F3;
         padding: 10px;
-        width: 315px;
         height: 315px;
+        align-items: center;
+        justify-content: center;
       }
 
       .field {
@@ -19,11 +19,21 @@
         width: 105px;
         font-size: 104px;
         text-align: center;
+        margin: 5px;
+      }
+
+      .indicator {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #title {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Tic Tac Toe</h1>
+    <h1 id="title">Tic Tac Toe</h1>
     <main id="app"></main>
     <script src="./bundle/index.js"></script>
   </body>

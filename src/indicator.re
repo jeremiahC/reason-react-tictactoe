@@ -1,4 +1,4 @@
 [@react.component]
 let make = (~status) => {
-    <div>{ React.string(status) }</div>
+    <div className="indicator">{ React.string(status) }</div>
 };

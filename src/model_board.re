@@ -16,7 +16,6 @@ module Game = {
     type cells = array(array(string));
 
     let checker = (cells: cells) => {
-/* Js.log(cells); */
         //pattern for row
         let pattern1 = (cells[0][0], cells[0][1], cells[0][2]);
         let pattern2 = (cells[1][0], cells[1][1], cells[1][2]);
