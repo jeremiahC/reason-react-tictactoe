@@ -17,11 +17,12 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.8",
     "bs-platform": "^5.0.0",
-    "fastpack": "^0.8.4",
-    "@glennsl/bs-jest": "^0.4.8"
+    "fastpack": "^0.8.4"
   },
   "dependencies": {
+    "bs-firebase": "https://github.com/avohq/bs-firebase.git",
     "reason-react": "^0.7.0"
   }
 }

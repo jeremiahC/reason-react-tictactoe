@@ -32,6 +32,7 @@ let make = () => {
                     key={string_of_int(index)}
                     row=item
                     event={handleClick}
+                    status={state.winner}
                 />
             </div>
         },

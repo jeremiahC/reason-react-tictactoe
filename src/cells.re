@@ -1,4 +1,4 @@
-let cell = (array, event) => {
+let cell = (array, event, status) => {
     Array.mapi(
         (cell, value) => {
             <button
@@ -6,7 +6,7 @@ let cell = (array, event) => {
                 id={string_of_int(cell)}
                 className="field"
                 onClick={event}
-                disabled={value != "" ? true : false}
+                disabled={value != "" || status != ""? true : false}
             >{React.string(value)}</button>
         },
         array
@@ -14,6 +14,6 @@ let cell = (array, event) => {
 };
 
 [@react.component]
-let make = (~row, ~event) => {
-    {cell(row, event) |> ReasonReact.array}
+let make = (~row, ~event, ~status) => {
+    {cell(row, event, status) |> ReasonReact.array}
 };
